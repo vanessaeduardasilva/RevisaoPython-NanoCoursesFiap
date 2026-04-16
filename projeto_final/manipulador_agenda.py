@@ -76,3 +76,27 @@ def altera_forma_contato (lista_contatos:list, valor_antigo:str, novo_valor:str)
         lista_contatos.insert(posicao_valor_antigo, novo_valor)
         return True
     return False
+
+#função de excluir contatos
+def exclui_contato(agenda:dict, nome_contato:str):
+    """"Recebe uma agenda completa como dicionario e o nome do contato como string.
+    Caso o nome do contato não esteja nas chaves do dicionario, retornará False
+    Caso o nome do contato esteja nas chaves,  o registro corrrespondente será removido e retornará True"""
+    if nome_contato in agenda.keys():
+        agenda.pop(nome_contato)
+        return True 
+    return False
+
+exclui_contato(agenda, "Pessoa 1")
+print(agenda_para_texto(**agenda))
+
+#função para incluir um contato:
+def inclui_contato(agenda:dict, nome_contato:str, **formas_contato):
+    """"Recebe uma agenda completa como dicionario, o nome do novo contato como string e as formas de contato
+    em um dicionario como **kwargs.
+    Não é feita nenhuma verificação, portanto se já existir um contato com o mesmo nome, será sobrescristo"""
+    #print(formas_contato)
+    agenda[nome_contato] = formas_contato
+
+inclui_contato(agenda, "Juquinha", telefone=["123456"], email=["abc@gmail.com"])
+print(agenda_para_texto(**agenda))    
