@@ -19,4 +19,4 @@ Se você também está fazendo o curso ou quer revisar os conceitos, o repositó
 - projeto_final 
 
 ## Para clonar o repositório
-bashgit clone https://github.com/vanessaeduardasilva/RevisaoPython-NanoCoursesFiap
+git clone https://github.com/vanessaeduardasilva/RevisaoPython-NanoCoursesFiap
