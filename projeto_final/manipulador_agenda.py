@@ -100,3 +100,19 @@ def inclui_contato(agenda:dict, nome_contato:str, **formas_contato):
 
 inclui_contato(agenda, "Juquinha", telefone=["123456"], email=["abc@gmail.com"])
 print(agenda_para_texto(**agenda))    
+
+def inclui_forma_contato(formas_contato:dict, forma_incluida:str, valor_incluido:str):
+    """"Recebe um dicionario com as formas de contato, a forma de contato que será incluida ou alterada e o
+    valor que será incluido. 
+        Caso a forma de contato já possua valores, o novo valor será adicionado na lista e retornará  True.
+        Caso a forma de contato ainda não exista e estiver presente na tupla de formas de contatos suportados 
+    será incluida e o novo valor será incluido em uma lista, retornando True.
+        Caso a forma de contato ainda não exista e não existiver presente na tupla de formas de contato suportados, 
+    retornará False"""
+    if forma_incluida in formas_contato.keys():
+        formas_contato[forma_incluida].append(valor_incluido)
+        return True
+    elif forma_incluida in contatos_suportados:
+        formas_contato[forma_incluida] = [valor_incluido]
+        return True
+    return False
