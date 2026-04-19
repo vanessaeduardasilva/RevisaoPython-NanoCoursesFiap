@@ -1,13 +1,22 @@
-# Python Review — FIAP
+## Python Review — FIAP
+Repositório desenvolvido durante o Nano Course de Python Development da FIAP, reunindo exercícios práticos e revisões dos principais fundamentos da linguagem.
+O objetivo principal foi fortalecer a base lógica de programação e os conhecimentos técnicos em Python, aplicando-os na resolução de problemas reais em um projeto que está em desenvolvimento.
 
-Este repositório contém exercícios e revisões de Python realizados durante o curso da FIAP.
+## Conteúdos abordados
 
-Conteúdos praticados:
+- Variáveis e tipos de dados
+- Estruturas condicionais
+- Estruturas de repetição (loops)
+- Funções
+- Projetos práticos
 
-- variáveis e tipos de dados
-- estruturas condicionais
-- loops
-- funções
-- pequenos exercícios de lógica
+## Como utilizar
+Se você também está fazendo o curso ou quer revisar os conceitos, o repositório está organizado da seguinte forma:
 
-O objetivo deste repositório é reforçar a lógica de programação e consolidar os conceitos estudados em Python.
+- atividades 
+- projetos
+- testes
+- projeto_final 
+
+## Para clonar o repositório
+bashgit clone https://github.com/vanessaeduardasilva/RevisaoPython-NanoCoursesFiap
